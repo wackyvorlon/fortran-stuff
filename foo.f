@@ -7,6 +7,15 @@
 		b=0
 		c=0
 		
+		! Initialize array with vals 1 to 100
+		a = (/ (i, i=1, 100)/)
+		
+		! take square roots
+		b=sqrt(a)
+		
+		c=b*a
+		
+		write (*,*) c
 	
 
 	end program foo
