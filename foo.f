@@ -28,7 +28,7 @@
 		
 		c=b*a
 		
-		write (*,*) "Writing data to file..."
+		!write (*,*) "Writing data to file..."
 		write(*,*) d
 		!write (10,*) c
 		!close(unit=10, iostat=ios, status="delete")
