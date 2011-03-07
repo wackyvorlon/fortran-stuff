@@ -4,8 +4,8 @@
 		! turns it off
 		real, dimension(100):: a,b,c,d
 		integer :: i, ios, istat
-		open(unit=10, file="bork", iostat=ios, status="new")
-		if ( ios /= 0 ) stop "Error opening bork"
+		!open(unit=10, file="bork", iostat=ios, status="new")
+		!if ( ios /= 0 ) stop "Error opening bork"
 		
 		open(unit=11, file="bork2", iostat=ios, status="old")
 		if ( ios /= 0 ) stop "Error opening bork2"
@@ -30,10 +30,10 @@
 		
 		write (*,*) "Writing data to file..."
 		write(*,*) d
-		write (10,*) c
+		!write (10,*) c
 		!close(unit=10, iostat=ios, status="delete")
 		!if ( ios /= 0 ) stop "Error closing file unit iounit"
-		close(10)
+		!close(10)
 		close(11)
 		
 	
