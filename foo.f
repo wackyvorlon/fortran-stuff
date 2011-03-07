@@ -1,5 +1,7 @@
 	program foo
 		implicit none
+		! implicit none has to do with implicit typing
+		! turns it off
 		real, dimension(100):: a,b,c
 		integer :: i
 		! Initialize everything to zero
