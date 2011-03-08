@@ -32,6 +32,9 @@
 		
 		!write (*,*) "Writing data to file..."
 		write(*,*) d
+		c=d**2
+		
+		write(*,*) "Results squared: ", c
 		!write (10,*) c
 		!close(unit=10, iostat=ios, status="delete")
 		!if ( ios /= 0 ) stop "Error closing file unit iounit"
