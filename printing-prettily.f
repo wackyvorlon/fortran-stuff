@@ -9,7 +9,7 @@
 		
 		! The goal is to print this out formatted nicely.
 		write(*,*) "Values: "
-		write(*,*) a
+		print '(10i8)', a
 		
 
 	end program printing
