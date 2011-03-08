@@ -2,6 +2,7 @@
 
 		implicit none
 		integer :: a,i,b
+		integer, dimension(100):: c
 		
 		! Outputs values from 1 to 100.
 		write(*,*) "Implied do test: ", (/(a,a=1,100)/)
@@ -15,6 +16,14 @@
 
 		write(*,*) "Result of dot product of two implied do loops: ", b
 		
+		! Let's try multiplying two implied do loops...
+		c=(/(a,a=1,100)/)*(/(i, i=1, 100)/)
+		write(*,*) "Result of multiplying two implied do loops:", c
+		
+		! Fascinating! Rasing to a power?
+		!c=(/(a,a=1,100)/)**(/(i, i=1, 100)/)
+		!write(*,*) "Raising implied do to the power of an implied do: ", c
+		! Hmm, doesn't like that. Says they are incommensurate.
 		
 	end program implied
 	
