@@ -15,6 +15,9 @@
 		!Find dot product
 		d = dot_product(a,b)
 		
+		!Multiplies each element in a with it's corresponding element in b
+		!then sums the result.
+		
 		write(*,*) "Dot product: ", d
 		
 
