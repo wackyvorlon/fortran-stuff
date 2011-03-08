@@ -12,8 +12,10 @@
 		
 		! This effort to read data is not working so well.
 		! Results appear scrambled.
-		read(unit=11, fmt="(100(F3.7,8X))", iostat=istat) d
-		if ( istat /= 0 ) stop "Read error in file unit 11"
+		!read(unit=11, *, iostat=istat) d
+		!if ( istat /= 0 ) stop "Read error in file unit 11"
+		
+		read(11,*) d
 		
 		! Initialize everything to zero
 		a=0
